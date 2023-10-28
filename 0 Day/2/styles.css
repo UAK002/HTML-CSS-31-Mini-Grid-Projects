@@ -174,7 +174,7 @@ Cards Project
   color: var(--primaryColor);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -185,6 +185,34 @@ Cards Project
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
   }
+} */
+/* 
+Three column layout
+
+max-width - 1170px
+no of columns - 3
+no. of gap - 2
+total gap = 2*2rem = 64px
+min width = (1170 - 64px) / 3 = 368px
+*/
+/* 
+four column layout
+
+max-width - 1170px
+no of columns - 4
+no. of gap - 3
+total gap = 3*2rem = 96px
+min width = (1170 - 64px) / 4 = 268.5px
+
+*/
+
+.cards-center {
+  display: grid;
+  grid-column-gap: 2rem;
+  /* grid-template-columns: repeat(auto-fill, minmax(368px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(368px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(368px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
 
 /* 
