@@ -205,6 +205,11 @@ total gap = 3*2rem = 96px
 min width = (1170 - 64px) / 4 = 268.5px
 
 */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
 
 .cards-center {
   display: grid;
