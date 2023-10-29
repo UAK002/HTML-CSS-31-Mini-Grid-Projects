@@ -204,6 +204,104 @@ Cards Project
   grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
 
-/* 
+/*
+=============================
+Tiles Project
+=============================
+*/
 
+.tiles {
+  padding: 4rem 0;
+}
+.tiles-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .tiles-center {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tiles-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tiles-center {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      'a a a b'
+      'a a a c'
+      'd d d d'
+      'e f f f'
+      'e g h i';
+  }
+  .tiles-center img {
+    height: 100%;
+  }
+  .tile-1 {
+    grid-area: a;
+  }
+  .tile-2 {
+    grid-area: b;
+  }
+  .tile-3 {
+    grid-area: c;
+  }
+  .tile-4 {
+    grid-area: d;
+  }
+  .tile-5 {
+    grid-area: e;
+  }
+  .tile-6 {
+    grid-area: f;
+  }
+  .tile-7 {
+    grid-area: g;
+  }
+  .tile-8 {
+    grid-area: h;
+  }
+  .tile-9 {
+    grid-area: i;
+  }
+}
+
+/* 
+- @MQ min-width:1170px T .tiles-center & GTR repeat (5, 200px )
+
+- @MQ min-width:1170px T .tiles-center & GTA :
+" a a a b "
+" a a a c "
+
+- @MQ min-width:1170px T .tiles-center & GTA :
+" a a a b "
+" a a a c "
+" d d d d"
+
+- @MQ min-width:1170px T .tiles-center & GTA :
+" a a a b "
+" a a a c "
+" d d d d"
+" e f f f "
+" e g h i "
+
+- @MQ min-width:1170px T .tile-1 & grid-area : a
+- @MQ min-width:1170px T .tile-2 & grid-area : b
+- @MQ min-width:1170px T .tile-3 & grid-area : c
+- @MQ min-width:1170px T .tile-4 & grid-area : d
+- @MQ min-width:1170px T .tile-5 & grid-area : e
+- @MQ min-width:1170px T .tile-6 & grid-area : f
+- @MQ min-width:1170px T .tile-7 & grid-area : g
+- @MQ min-width:1170px T .tile-8 & grid-area : h
+- @MQ min-width:1170px T .tile-9 & grid-area : i
+
+- @MQ min-width:1170px T .tiles img & height 100%
 */
