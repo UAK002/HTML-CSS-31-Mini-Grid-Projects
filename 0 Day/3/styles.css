@@ -215,19 +215,5 @@ min-width for each column - (1170px - 96px)/ 4 = 268.5px
 }
 
 /* 
-- style.css > comment styles for both MQ
 
-- T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofill, minmax(368px,1fr )
-
-- comment the below code : T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofill, minmax(368px,1fr )
-
-- T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofit, minmax(368px,1fr )
-
-- comment the code : T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofit, minmax(368px,1fr )
-
-T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofill, minmax(368px,1fr )
-
-- comment code - T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofill, minmax(368px,1fr )
-
-- T .cards-center & display grid & grid-column-gap 2rem & GTC repeat(autofill, minmax(268px,1fr )
 */
