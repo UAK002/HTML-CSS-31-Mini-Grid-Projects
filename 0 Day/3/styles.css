@@ -119,10 +119,10 @@ Hero Project
   justify-content: center;
   align-items: center;
 }
-.hero-banner {
-  /* background: blue; */
-  /* text-align: center; */
-}
+/* .hero-banner {
+  background: blue;
+  text-align: center;
+} */
 .hero-banner p {
   max-width: 560px;
   width: 80%;
